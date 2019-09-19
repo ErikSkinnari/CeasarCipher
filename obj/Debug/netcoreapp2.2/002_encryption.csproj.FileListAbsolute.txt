@@ -1,0 +1,11 @@
+D:\008_projects\004_programming\002_dotnet\002_SchoolTasks\002_secondWeek\002_encryption\bin\Debug\netcoreapp2.2\002_encryption.deps.json
+D:\008_projects\004_programming\002_dotnet\002_SchoolTasks\002_secondWeek\002_encryption\bin\Debug\netcoreapp2.2\002_encryption.runtimeconfig.json
+D:\008_projects\004_programming\002_dotnet\002_SchoolTasks\002_secondWeek\002_encryption\bin\Debug\netcoreapp2.2\002_encryption.runtimeconfig.dev.json
+D:\008_projects\004_programming\002_dotnet\002_SchoolTasks\002_secondWeek\002_encryption\bin\Debug\netcoreapp2.2\002_encryption.dll
+D:\008_projects\004_programming\002_dotnet\002_SchoolTasks\002_secondWeek\002_encryption\bin\Debug\netcoreapp2.2\002_encryption.pdb
+D:\008_projects\004_programming\002_dotnet\002_SchoolTasks\002_secondWeek\002_encryption\obj\Debug\netcoreapp2.2\002_encryption.csprojAssemblyReference.cache
+D:\008_projects\004_programming\002_dotnet\002_SchoolTasks\002_secondWeek\002_encryption\obj\Debug\netcoreapp2.2\002_encryption.csproj.CoreCompileInputs.cache
+D:\008_projects\004_programming\002_dotnet\002_SchoolTasks\002_secondWeek\002_encryption\obj\Debug\netcoreapp2.2\002_encryption.AssemblyInfoInputs.cache
+D:\008_projects\004_programming\002_dotnet\002_SchoolTasks\002_secondWeek\002_encryption\obj\Debug\netcoreapp2.2\002_encryption.AssemblyInfo.cs
+D:\008_projects\004_programming\002_dotnet\002_SchoolTasks\002_secondWeek\002_encryption\obj\Debug\netcoreapp2.2\002_encryption.dll
+D:\008_projects\004_programming\002_dotnet\002_SchoolTasks\002_secondWeek\002_encryption\obj\Debug\netcoreapp2.2\002_encryption.pdb
