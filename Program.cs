@@ -94,8 +94,6 @@ namespace _002_encryption
                 output += Convert.ToInt32(c);
             }
 
-            System.Console.WriteLine("Encryption key is: " + output);
-
             return output;
         }
         private static string Encrypt()
@@ -116,12 +114,12 @@ namespace _002_encryption
                 c = c + key;
                 //Add decrypted char to output
                 output += c + "|";
+                //Change key
+                key++;
             }
-
 
             return output;
         }
-
 
         private static string Decrypt()
         {
@@ -130,42 +128,40 @@ namespace _002_encryption
             System.Console.Write("Enter text to decrypt: ");            
             string encryptedString = Console.ReadLine();
             
+            // If string ends with whitespace and/or |, remove it. 
+            encryptedString.Trim();
+            if(encryptedString.LastIndexOf('|') == encryptedString.Length - 1)
+            {
+                encryptedString = encryptedString.Remove(encryptedString.LastIndexOf('|'));
+            }
+            
             int key = GetEncryptionKey();
 
             // Take input string and split it at |
             string[] charInts = encryptedString.Split('|');
             foreach (string number in charInts)
             {
-                
-                //System.Console.WriteLine(number);
-                int n = Convert.ToInt32(number);
-                System.Console.WriteLine(n);
+                int n = 0;
+
+                try
+                {
+                    n = Convert.ToInt32(number);
+                    n = n - key;
+                }
+                catch
+                {
+                    PrintHeader();
+                    System.Console.WriteLine("Something went wrong. Press enter to go to main menu.");
+                    Console.ReadLine();
+                    MainMenu();
+                }
+
                 output = output + (char)n;
-                // try
-                // {
-                //     int n = Convert.ToInt32(number);
-                //     output += Convert.ToChar(n);
-                // }
-                // catch
-                // {
-                //     PrintHeader();
-                //     System.Console.WriteLine("Something went wrong. Press enter to go to main menu.");
-                //     Console.ReadLine();
-                //     MainMenu();
-                // }
+                key++;
             }
 
-            System.Console.WriteLine(output);
-
-            // for (int i = 0; i < encryptedString.Length; i++)
-            // {
-            //     //Convert char to numeric value
-            //     int c = Convert.ToInt32(encryptedString[i]);
-            //     //Decrypt the char
-            //     c = c - key;
-            //     //Add decrypted char to output
-            //     output += Convert.ToChar(c);
-            // }
+            PrintHeader();
+            System.Console.WriteLine($"Din dekrypterade textsträng är: {output}");
 
             return output;
         }
